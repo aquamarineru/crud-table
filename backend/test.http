@@ -1,0 +1,46 @@
+### Test Create User
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+    "name": "Amy",
+    "last_name": "Lee",
+    "position": "Graphic Designer",
+    "email": "test3@gmail.com",
+    "location": "London",
+    "salary": 500,
+    "experience": "3 years",
+    "skills": ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign"],
+    "education": "Bachelor's Degree",
+    "status": "Active"
+}
+
+### Test Get All Users
+GET http://localhost:8080/api/users
+
+### Test Get User By Id
+GET http://localhost:8080/api/user/669d480084e1771760e8d438
+###
+### Test Update User 
+PUT http://localhost:8080/api/user/669d480084e1771760e8d438
+Content-Type: application/json
+
+{
+    "name": "Tom",
+    "last_name": "Jerry"
+}
+
+### Test Update User
+PUT http://localhost:8080/api/user/669d480084e1771760e8d438
+Content-Type: application/json
+
+{
+    "name": "Bob",
+    "last_name": "Jerry",
+    "position": "Manager"
+}
+
+### Test Delete User
+DELETE http://localhost:8080/api/user/669d480084e1771760e8d438
+
+

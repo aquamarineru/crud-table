@@ -1,0 +1,45 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    &Input{
+        width: 40%;
+        height: 40px;
+        border: 1px solid #8b8b8b;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+    &Button{
+        height: 40px;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            background-color: #346991;
+        }
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        &Input{
+            width: 60%;
+        }
+        &Button{
+            width: 30%;
+        }
+    }
+    @media screen and (max-width: 480px){
+        &Input{
+            width: 80%;
+        }
+        &Button{
+            width: 50%;
+        }
+        
+    }
+}

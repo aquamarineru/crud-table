@@ -1,0 +1,43 @@
+.tableContainer{
+    width: 100%;
+    padding: 20px;
+    &AddUser{
+        margin-bottom: 10px;
+        &Button{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            gap: 5px;
+        }
+    }
+    &Responsive{
+        width: 100%;
+        overflow-x: auto;
+
+        }
+    &BtnAction{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        &Button{
+            cursor: pointer;
+        }
+    }
+}
+.inputField {
+	border: none;
+  	outline: none;
+    background: none;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.noDataMessage {
+    height: 50vh;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+}
